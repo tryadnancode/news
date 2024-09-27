@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
       title: 'News',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const NewsScreen(),
-
     );
   }
 }
