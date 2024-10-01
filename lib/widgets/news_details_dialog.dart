@@ -55,9 +55,10 @@
 //   }
 // }
 //
-import 'package:circular_graph/api/news_response.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../model/api/news_response.dart';
 
 class NewsDetailsDialog extends StatelessWidget {
   final Articles article;

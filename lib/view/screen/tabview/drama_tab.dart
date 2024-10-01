@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:circular_graph/api/news_response.dart';
-import 'package:circular_graph/widgets/news_list.dart';
-import 'news_details_dialog.dart';
-
-class AllNewsTab extends StatelessWidget {
+import '../../../model/api/news_response.dart';
+import '../../../widgets/news_details_dialog.dart';
+import '../../../widgets/news_list.dart';
+class DramaTab extends StatelessWidget {
   final List<Articles> articles;
-  final Future<void> Function() onRefresh;  // Function to refresh news
-
-  const AllNewsTab({super.key, required this.articles, required this.onRefresh});
+  final Future<void> Function() onRefresh;
+  const DramaTab({super.key, required this.articles, required this.onRefresh,});
 
   @override
   Widget build(BuildContext context) {
     return RefreshIndicator(
-      onRefresh: onRefresh,  // Attach the refresh function
+      onRefresh: onRefresh,
       child: ListView.builder(
         itemCount: articles.length,
         itemBuilder: (BuildContext context, int index) {
